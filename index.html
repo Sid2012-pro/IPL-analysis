@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizarre Sync</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <div id="game-container">
+        <div class="hud-top">
+            <div class="fighter-stats left">
+                <div class="portrait"></div>
+                <div class="bars">
+                    <div class="name-text">PILOT</div>
+                    <div class="hp-bg"><div id="player-hp" class="hp-fill"></div></div>
+                    <div class="mom-bg"><div id="player-momentum" class="mom-fill"></div></div>
+                </div>
+            </div>
+            <div class="vs-text">VS</div>
+            <div class="fighter-stats right">
+                <div class="bars">
+                    <div class="name-text">FOE</div>
+                    <div class="hp-bg"><div id="enemy-hp" class="hp-fill"></div></div>
+                    <div class="mom-bg"><div id="enemy-momentum" class="mom-fill"></div></div>
+                </div>
+                <div class="portrait"></div>
+            </div>
+        </div>
+
+        <div id="sidebar-ui">
+            <div class="move-row" id="btn-q">
+                <span>POKE</span>
+                <kbd>Q</kbd>
+            </div>
+            <div class="move-row" id="btn-w">
+                <span>PHYSICAL</span>
+                <kbd>W</kbd>
+            </div>
+            <div class="move-row" id="btn-e">
+                <span>HAMON</span>
+                <kbd>E</kbd>
+            </div>
+            <div class="move-row" id="btn-space">
+                <span>CANCEL</span>
+                <kbd>SPACE</kbd>
+            </div>
+            <div id="sit-button" class="sit-hex unavailable">
+                <span>S.I.T.</span>
+                <kbd>R</kbd>
+            </div>
+        </div>
+
+        <canvas id="battle-canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
